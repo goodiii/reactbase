@@ -1,0 +1,32 @@
+{
+  "name": "react_webpack_starter",
+  "version": "1.0.0",
+  "description": "react and webpack starter",
+  "main": "app.js",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "build": "webpack",
+    "clean": "rimraf ./dist/",
+    "cb": "rimraf ./dist/ && webpack",
+    "cbs": "rimraf ./dist/ && webpack && webpack-dev-server --content-base dist/ --progress --colors",
+    "start": "webpack-dev-server --content-base dist/ --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "webpack",
+    "starter",
+    "react"
+  ],
+  "author": "goodi",
+  "license": "UNLICENSED"
+}
